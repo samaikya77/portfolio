@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body id="body">
+    <label>Enter the first number</label>
+    <input type="number" id="first"/>
+    </br>
+    <label>Enter the second number</label>
+    <input type="number" id="second"/>
+    </br>
+    <label>Enter the third number</label>
+    <input type="number" id="third"/>
+    </br>
+    <button onclick="add()">switch</button>
+    <script>
+        function add(){
+        var body=document.getElementById("body")
+        var a=document.getElementById("first").value
+        var b=document.getElementById("second").value-0
+        var c=document.getElementById("third").value-0
+        var res=a+b+c
+        var newelement=document.createElement("h1")
+        newelement.innertext=res
+        body.appendChild(newelement)
+        }
+
+    </script>
+    
+</body>
+</html>
