@@ -7,29 +7,34 @@
     
 </head>
 <body id="body">
-    <label>Enter the first number</label>
-    <input type="number" id="first"/>
-    </br>
-    <label>Enter the second number</label>
-    <input type="number" id="second"/>
-    </br>
-    <label>Enter the third number</label>
-    <input type="number" id="third"/>
-    </br>
-    <button onclick="add()">switch</button>
-    <script>
-        function add(){
-        var body=document.getElementById("body")
-        var a=document.getElementById("first").value
-        var b=document.getElementById("second").value-0
-        var c=document.getElementById("third").value-0
-        var res=a+b+c
-        var newelement=document.createElement("h1")
-        newelement.innertext=res
-        body.appendChild(newelement)
-        }
+    <!--this is a onchange event-->
+    <input type="text" onchange="alert('the input file has be changed')"/>
+    <!--this is a onclick event-->
+    <button onclick="alert('the button has been clicked')">click</button>
+    <!--this is a onmouseover event-->
+    <h1 onmouseover="alert('the mouse has been placed')">this is the h1 tag</h1>
+    <h1 onmouseover="this.style.color='red'">this is the h1 tag</h1>
+    <!--this is the onmouseout event -->
+    <h1 onmouseout="this.style.color='red'">this is the h1 tag</h1>
+    <!--this is the onkeydown event-->
+    <input type="text" onkeydown="alert('a key has been pressed')"/>
+    <!--this is the onkeyup event-->
+    <input type="text" onkeyup="alert('a key has been  placed')"/>
+    <!--this is the onsubmit event-->
+    <form onsubmit="alert('the form has been submitted')">
+        <input type="text"/>
+        <button>click</button>
+    </form>
+    <!--this is the oninput event-->
+    <input type="text" oninput="alert('the input has been changed')"/>
+    <!--this is the onfocus event-->
+    <input type="text" onfocus="this.style.color='red'"/>
+    <!--this is the onblur event-->
+    <input type="text" onblur="alert('the event has been trigerred')"/>
+    <!--this is the ondbclick event-->
+    <h1 ondbclick="alert('clicked 2 times')">h1 tag</h1>
+    <!--this is the oncontextmenu event-->
+    <body oncontextmenu="alert('disabled')">h1 tag</body>
 
-    </script>
-    
 </body>
 </html>
